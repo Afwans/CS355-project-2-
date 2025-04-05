@@ -51,16 +51,21 @@ quiz-app/
 
 
  1. Clone the repo:
+ 
  git clone https://github.com/Afwans/quiz-app.git
+ 
  cd quiz-app
 
 2. Install dependencies:
+
    npm install express cors
 
-3. Start the server:\
+4. Start the server:\
+
    node server.js
 
-4. Access the app:
+6. Access the app:
+
    Visit http://localhost:3000 in your browser
 
 
