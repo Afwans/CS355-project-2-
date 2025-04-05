@@ -52,9 +52,9 @@ quiz-app/
 
  1. Clone the repo:
  
- git clone https://github.com/Afwans/quiz-app.git
+   git clone https://github.com/Afwans/quiz-app.git
  
- cd quiz-app
+   cd quiz-app
 
 2. Install dependencies:
 
