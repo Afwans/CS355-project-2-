@@ -4,19 +4,30 @@ This is a full-featured Quiz Web App built using HTML, CSS, and JavaScript, with
 
 🚀 Features
 ✅ Start screen with question count selector
+
 ✅ Fetches randomized questions from the server
+
 ✅ Multiple choice questions
+
 ✅ Shuffled answer order
+
 ✅ Timer per question (10 seconds)
+
 ✅ Progress tracker (text + bar)
+
 ✅ Dark mode toggle (persistent)
+
 ✅ End-of-quiz score display
+
 ✅ Review mode (shows your answers vs. correct)
+
 ✅ Replay functionality
 
 🧠 Technologies Used
 Frontend: HTML, CSS, JavaScript
+
 Backend: Node.js with Express
+
 Data: Static JSON file containing question objects
 
  Project Structure
