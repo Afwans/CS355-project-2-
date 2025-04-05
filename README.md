@@ -50,13 +50,13 @@ quiz-app/
 📦 Setup Instructions
 
 
- 1. Clone the repo:
- 
+1. Clone the repo:
+
    git clone https://github.com/Afwans/quiz-app.git
- 
+
    cd quiz-app
 
-2. Install dependencies:
+3. Install dependencies:
 
    npm install express cors
 
