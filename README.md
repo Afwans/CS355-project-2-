@@ -32,19 +32,27 @@ Data: Static JSON file containing question objects
 
  Project Structure
 quiz-app/
+
 ├── public/
+
 │   ├── index.html
+
 │   ├── style.css
+
 │   └── script.js
+
 ├── questions.json
+
 ├── server.js
+
 └── README.md
 
 📦 Setup Instructions
 
-1. Clone the repo:
-git clone https://github.com/Afwans/quiz-app.git
-cd quiz-app
+
+ 1. Clone the repo:
+ git clone https://github.com/Afwans/quiz-app.git
+ cd quiz-app
 
 2. Install dependencies:
    npm install express cors
