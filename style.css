@@ -56,7 +56,7 @@ h1 {
     cursor: no-drop;
 }
 
-#next-btn {
+#next-btn, #back-btn {
     background: #001e4d;
     color: #fff;
     font-weight: 500;
@@ -112,6 +112,113 @@ h1 {
 
 .progress {
     font-size: 16px;
-    margin: 10px 0;
+    margin: 10px 0 5px;
     color: #333;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #eee;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+.review-question {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.review-question h3 {
+    font-size: 16px;
+    color: #001e4d;
+    margin-bottom: 8px;
+}
+
+.review-answer {
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+}
+
+.correct-answer {
+    background-color: #c8f7c5;
+}
+
+.incorrect-answer {
+    background-color: #f7c5c5;
+}
+
+.user-answer {
+    font-weight: bold;
+}
+
+/* 🌙 Dark Mode Theme */
+body.dark {
+    background: #0b0bda;
+    color: #e0e0e0;
+}
+
+body.dark .app,
+body.dark .start-screen.box,
+body.dark .review-answer {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+body.dark .btn {
+    background: #2c2c2c;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark .btn:hover:not([disabled]) {
+    background: #555;
+    color: #fff;
+}
+
+body.dark .correct {
+    background-color: #2e7d32;
+    color: white;
+}
+
+body.dark .incorrect {
+    background-color: #c62828;
+    color: white;
+}
+
+body.dark .progress-bar {
+    background-color: #2e2e2e;
+}
+
+body.dark .progress-fill {
+    background-color: #1db954;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #001e4d;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    z-index: 1000;
+}
+
+body.dark #dark-mode-toggle {
+    background: #333;
+    color: white;
 }
