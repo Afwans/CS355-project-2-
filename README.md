@@ -2,6 +2,9 @@
 This is a full-featured Quiz Web App built using HTML, CSS, and JavaScript, with a Node.js + Express backend that serves questions from a JSON file. The app supports a clean UI, interactive gameplay, and advanced features like dark mode, progress tracking, and review mode.
 
 
+
+
+
 🚀 Features
 ✅ Start screen with question count selector
 
@@ -23,12 +26,15 @@ This is a full-featured Quiz Web App built using HTML, CSS, and JavaScript, with
 
 ✅ Replay functionality
 
+
+
 🧠 Technologies Used
 Frontend: HTML, CSS, JavaScript
 
 Backend: Node.js with Express
 
 Data: Static JSON file containing question objects
+
 
  Project Structure
 quiz-app/
@@ -47,6 +53,8 @@ quiz-app/
 
 └── README.md
 
+
+
 📦 Setup Instructions
 
 
@@ -64,14 +72,17 @@ quiz-app/
 
    node server.js
 
-6. Access the app:
+5. Access the app:
 
    Visit http://localhost:3000 in your browser
+
 
 
 🧑 Author
 1. Mohd Afwan Shaikh [https://www.linkedin.com/in/mohdafwan/] [https://afwans.github.io/]
 2. 
+
+
 
 
 📄 License
