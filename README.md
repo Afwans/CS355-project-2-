@@ -195,29 +195,22 @@ quiz-app/
 
    Visit [quiz-app-rrfw.onrender.com]
 
-<<<<<<< HEAD
+   
 🧑 Authors
 1. Mohd Afwan Shaikh [https://www.linkedin.com/in/mohdafwan/] [https://afwans.github.io/]
 2. Nageen Saira [https://www.linkedin.com/in/nageensaira/] [https://nageen123-saira.github.io/port/]
 3. Arjun Chhabra [https://www.linkedin.com/in/arjun-chhabra-22150b247/] [https://github.com/Jun1604] 
 4. Sadia Sharmin [https://www.linkedin.com/in/sadiasharmin16/] [https://ssharmin28.github.io/]
-=======
-🧑 Author
-1. Mohd Afwan Shaikh [https://www.linkedin.com/in/mohdafwan/] [https://afwans.github.io/]
-2. Nageen Saira [https://www.linkedin.com/in/nageensaira/] [https://nageen123-saira.github.io/port/]
-3. Arjun Chhabra [https://www.linkedin.com/in/arjun-chhabra-22150b247/] [https://github.com/Jun1604] 
-4. Sadia Sharmin 
->>>>>>> recovered-branch2
 
 
 Contribution to the project 
 
 | Name  | Contribution | Worked on 
 | ----- | ----- | ----- |
-| Mohd Afwan Shaikh  | Backend + Core Features | Project Architecture & Planning, Backend API Setup (Node.js + Express), User storage and maintenance (via backend/database), Account Handling and Security, Real-time leaderboard showcasing top-performing users, Game history tracking and display, Final Message based on Scores, Greeting Message, Deployment & Error Handling, Assistance in all modules for debugging & integration |
-| Arjun Chhabra | Frontend Developer - Core UI | Start screen with question count selector, Multiple choice questions UI, Shuffled answer order, Timer per question (10 seconds), Progress tracker (text + bar), End-of-quiz score display, Review mode (show your answers vs. correct), Replay functionality, Practice mode |
-| Nageen Saira | Profile & User Management |Customizable user profiles, Editable bio, email, username, and password, Seamless profile update experience, Greeting Message (on profile / main screen), Profile Page Styling, Settings Page UI and logic |
-| Sadia Sharmin | Advanced Features & UI Enhancements | Dark mode toggle, Sound mode toggle, Sound effects when a question is answered, Frontend Sound Integration Logic, Navbar/Settings enhancements, UI Responsiveness across all pages, CSS Styling for the entire project (consistency & theme)|
+| Mohd Afwan Shaikh  | Backend + Core Features | Project Architecture & Planning, Backend API Setup (Node.js + Express), User storage and maintenance (via backend/database), Account Handling and Security, Real-time leaderboard showcasing top-performing users, Game history tracking and display, Final Message based on Scores, Greeting Message, Deployment & Error Handling, Assistance in all modules for debugging & integration, and more |
+| Arjun Chhabra | Frontend Developer - Core UI | Start screen with question count selector, Multiple choice questions UI, Shuffled answer order, Timer per question (10 seconds), Progress tracker (text + bar), End-of-quiz score display, Review mode (show your answers vs. correct), Replay functionality, Practice mode, and more |
+| Nageen Saira | Profile & User Management |Customizable user profiles, Editable bio, email, username, and password, Seamless profile update experience, Greeting Message (on profile / main screen), Profile Page Styling, Settings Page UI and logic, and more |
+| Sadia Sharmin | Advanced Features & UI Enhancements | Dark mode toggle, Sound mode toggle, Sound effects when a question is answered, Frontend Sound Integration Logic, Navbar/Settings enhancements, UI Responsiveness across all pages, CSS Styling for the entire project (consistency & theme), and more|
 
 Notes:
 * All teammates contributed to testing, feedback, and final tweaks.
@@ -229,6 +222,7 @@ Notes:
 
 
 📄 License
+
 This project is strictly limited to use by Mohd Afwan Shaikh, Arjun Chhabra, Sadia Sharmin, and Nageen Saira. Unauthorized usage, distribution, or modification by others is strictly prohibited and may lead to legal action.
 If found in use outside of the authorized team, it can result in a lawsuit.
 
