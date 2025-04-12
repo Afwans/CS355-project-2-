@@ -252,20 +252,6 @@ body.dark .incorrect-answer {
     background-color: #c62828;
 }
 
-/* #dark-mode-toggle {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #8299ED;
-    color: #2c2c2c;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    z-index: 1000;
-} */
-
 body.dark #dark-mode-toggle {
     background: #001e4d;
     color: white;
@@ -298,20 +284,18 @@ body.dark #dark-mode-toggle {
     justify-content: space-between;
     align-items: center;
 }
-/*
+
 #sound-toggle-btn {
     position: absolute;
     top: 10px;
     left: 130px;
-    background: #001e4d;
-    color: white;
-    padding: 8px 12px;
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
     border: none;
     z-index: 1000;
-  } */
+    transform: translate3d(-110px, 60px,0);
+  } 
 
 body.dark #sound-toggle-btn {
     background: #001e4d;
