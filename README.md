@@ -184,7 +184,7 @@ quiz-app/
 🧑 Author
 1. Mohd Afwan Shaikh [https://www.linkedin.com/in/mohdafwan/] [https://afwans.github.io/]
 2. sara
-3. arjun
+3. Arjun Chhabra [https://www.linkedin.com/in/arjun-chhabra-22150b247/] [https://github.com/Jun1604] 
 4. sadia
 
 
