@@ -193,11 +193,11 @@ quiz-app/
 
    Visit [quiz-app-rrfw.onrender.com]
 
-🧑 Author
+🧑 Authors
 1. Mohd Afwan Shaikh [https://www.linkedin.com/in/mohdafwan/] [https://afwans.github.io/]
 2. Nageen Saira [https://www.linkedin.com/in/nageensaira/] [https://nageen123-saira.github.io/port/]
 3. Arjun Chhabra [https://www.linkedin.com/in/arjun-chhabra-22150b247/] [https://github.com/Jun1604] 
-4. Sadia Sharmin 
+4. Sadia Sharmin [https://www.linkedin.com/in/sadiasharmin16/] [https://ssharmin28.github.io/]
 
 
 Contribution to the project 
