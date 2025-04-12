@@ -5,12 +5,13 @@ var router = express.Router();
 const questionsDBFileName = path.join(__dirname, "../databases/questions.json");
 const gameHistory = path.join(__dirname, "../databases/games.json");
 const leaderboard = path.join(__dirname, "../databases/leaderboard.json");
+const usersDBFileName = path.join(__dirname, "../databases/users.json");
 
 let questionCount;
 
 router.get('/', function(req, res, next) {
-    res.render('./main/quiz');
-  });
+    return res.render("./main/quiz", {userName: getUser(req,res)} );
+});
 
 router.get("/api/questions", (req, res) => {
     questionCount = parseInt(req.query.count) || 10;
@@ -78,6 +79,16 @@ router.post("/submitQuiz", (req, res) => {
     // res.json({ success: true, message: "Score submitted successfully." });
 });
 
+function getUser(req, res){
+    let users = readUsersDB().users;
+    let userName = (users.find(user => user.id == req.cookies.userID)).userName;  
+    return userName;
+}
+
+function readUsersDB() {
+    let data = fs.readFileSync(usersDBFileName, "utf-8");
+    return JSON.parse(data);
+}
 
 function readGamesDB() {
     let data = fs.readFileSync(gameHistory, "utf-8");

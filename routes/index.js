@@ -14,20 +14,18 @@ function readUsersDB() {
 
 router.get('/', function(req, res, next) {
   if(req.cookies.loggin === "true"){
-    return res.render("./main/quiz", {path: getPath(getPicID(req,res))});
+    return res.render("./main/quiz", {path: getPath(getPicID(req,res)), userName: getUser(req,res)});
   }
   res.render('./auth/index');
 });
 
 router.get('/quiz', function(req, res, next) {
   if(req.cookies.loggin === "false") return res.redirect("/");
-  return res.render("./main/quiz", {path: getPath(getPicID(req,res))});
+  return res.render("./main/quiz", {path: getPath(getPicID(req,res)), userName: getUser(req,res)});
 });
 
 router.get("/getUser", (req, res) => {
-  let users = readUsersDB().users;
-  let userName = users.find(user => user.id == req.cookies.userID).userName;  
-  res.send(userName);
+  res.send(getUser(req,res));
 });
 
 router.post("/update-Pic", (req, res) => {
@@ -53,6 +51,12 @@ function getPicID(req,res){
 function readProfilesDB() {
     let data = fs.readFileSync(profilesDBFileName, "utf-8");
     return JSON.parse(data);
+}
+
+function getUser(req, res){
+  let users = readUsersDB().users;
+  let userName = users.find(user => user.id == req.cookies.userID).userName;  
+  return userName;
 }
 
 module.exports = router;

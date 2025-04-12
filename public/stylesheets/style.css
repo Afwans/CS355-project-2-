@@ -82,7 +82,7 @@ h1 {
     font-size: 18px;
     color: #9D0505;
     position: absolute;
-    top: 90px;
+    top: 110px;
     right: 50px;
     font-weight: bold;
 }
@@ -96,6 +96,12 @@ h1 {
     padding: 30px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction: column;
+}
+
+.quizSettings{
+    padding:4px 0;
 }
 
 .start-screen label {
@@ -105,7 +111,14 @@ h1 {
 }
 
 #question-count {
-    padding: 8px;
+    padding: 4px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#question-mode {
+    padding: 4px;
     font-size: 16px;
     border-radius: 4px;
     border: 1px solid #ccc;
@@ -195,6 +208,10 @@ body.dark #back-btn {
 }
 
 body.dark label[for="question-count"] {
+    color: #e0e0e0;
+}
+
+body.dark label[for="question-mode"] {
     color: #e0e0e0;
 }
 

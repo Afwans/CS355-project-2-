@@ -8,10 +8,12 @@ let timeLeft = 10;
 let timeLeft2 = 10000;
 let selectedQuestionCount = 10;
 let userAnswers = [];
+let selectedMode = "Timed";
 
 const startScreen = document.getElementById("start-screen");
 const startButton = document.getElementById("start-btn");
 const questionCountSelect = document.getElementById("question-count");
+const questionModeSelect = document.getElementById("question-mode");
 const app = document.querySelector(".app");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
@@ -19,6 +21,9 @@ const nextButton = document.getElementById("next-btn");
 const timerDisplay = document.getElementById("timer");
 const progress = document.getElementById("progress");
 const progressFill = document.getElementById("progress-fill");
+const timerElement = document.getElementById("timer");
+const modeDisplay= document.getElementById("mode-Display");
+
 
 const reviewScreen = document.getElementById("review-screen");
 const reviewContainer = document.getElementById("review-container");
@@ -39,8 +44,14 @@ soundToggleBtn.addEventListener("click", () => {
 
 startButton.addEventListener("click", () => {
     selectedQuestionCount = parseInt(questionCountSelect.value);
+    selectedMode = (questionModeSelect.value);
+    if(selectedMode === "Practice"){
+        timerElement.style.display = "none";
+    }
+    console.log(selectedMode);
     startScreen.style.display = "none";
     app.style.display = "block";
+    modeDisplay.textContent = selectedMode + " Quiz";
     fetchQuestions();
 });
 
@@ -84,7 +95,7 @@ function shuffleArray(array) {
 
 function showQuestion() {
     resetState();
-    startTimer();
+    if(selectedMode === "Timed"){startTimer();}
 
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.innerText = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
@@ -112,6 +123,8 @@ function resetState() {
     timerDisplay.innerText = `Time: ${timeLeft}s`;
     nextButton.style.display = "none";
     answerButtons.innerHTML = "";
+    timeoutSound.pause();
+    timeoutSound.currentTime = 0;
 }
 
 function startTimer() {
@@ -140,15 +153,17 @@ function startTimer() {
 }
 
 function selectAnswer(e) {
-    clearInterval(timer);
-    clearInterval(timer2);
+    if(selectedMode === "Timed"){
+        clearInterval(timer);
+        clearInterval(timer2);
+    }
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
 
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
-        timeTaken += (10000 - timeLeft2);
+        if(selectedMode === "Timed"){timeTaken += (10000 - timeLeft2)};
         triggerEmojiShower("happy");
         if (soundEnabled) {
             correctSound.play();
@@ -176,12 +191,13 @@ function showCorrectAnswer() {
 
 function showScore() {
     resetState();
+    timerElement.style.display = "none";
     questionElement.innerText = `You scored ${score} out of ${questions.length}!`;
     progress.innerText = "";
     progressFill.style.width = "100%";
     nextButton.innerText = "Review Answers";
     nextButton.style.display = "block";
-    sendScore(score, timeTaken);
+    if(selectedMode === "Timed"){sendScore(score, timeTaken);}
     showFinalMessage(score, questions.length);
 
 }

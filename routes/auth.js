@@ -84,7 +84,7 @@ function renderSignin(req, res, msg){
 }
 
 function renderHome(req, res) {
-    res.cookie("loggin", "true");
+    res.cookie("loggin", "true", {maxAge: 3600000});
     res.redirect("/quiz");
 }
 

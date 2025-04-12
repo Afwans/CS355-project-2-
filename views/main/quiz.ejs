@@ -11,21 +11,31 @@
 
 <!-- Start Screen -->
 <div id="start-screen" class="start-screen box">
-  <h2>Welcome to the Quiz!</h2>
-  <label for="question-count">How many questions?</label>
-  <select id="question-count">
-    <option value="5">5</option>
-    <option value="10" selected>10</option>
-    <option value="15">15</option>
-    <option value="20">20</option>
-  </select>
+  <h2>Welcome to the Quiz <%=userName %> 🎉!</h2>
+  <div class="quizSettings">
+    <label for="question-count">How many questions?</label>
+    <select id="question-count">
+      <option value="5">5</option>
+      <option value="10" selected>10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select>
+  </div>
+  <div class="quizSettings">
+  <label for="question-mode">Which Mode?</label>
+    <select id="question-mode">
+      <option value="Practice"> Practice</option>
+      <option value="Timed" selected>Timed</option>
+    </select>
+  </div>
   <br><br>
   <button id="start-btn">Start Quiz</button>
 </div>
 
 <!-- Quiz App -->
+
 <div class="app" style="display: none;">
-  <h1>Simple Quiz</h1>
+  <h1 id="mode-Display">Simple Quiz</h1>
   <div id="progress" class="progress">Question 1 of 10</div>
   <div class="progress-bar">
     <div id="progress-fill" class="progress-fill"></div>
