@@ -6,6 +6,7 @@ This is a full-featured Quiz Web App built using HTML, CSS, and JavaScript, with
 
 
 🚀 Features
+
 ✅ Start screen with question count selector
 
 ✅ Fetches randomized questions from the server
@@ -26,6 +27,20 @@ This is a full-featured Quiz Web App built using HTML, CSS, and JavaScript, with
 
 ✅ Replay functionality
 
+✅ Persistent user storage and maintenance (via backend/database)
+
+✅ Customizable user profiles
+
+✅ Editable bio, email, username, and password
+
+✅ Account Handling and Security
+
+✅ Game history tracking and display
+
+✅ Seamless profile update experience
+
+✅ Real-time leaderboard showcasing top-performing users
+
 
 
 
@@ -40,20 +55,105 @@ Data: Static JSON file containing question objects
  Project Structure
 quiz-app/
 
+├── bin
+
+│ └── www
+
+├── databases/
+
+│ ├── questions.json
+
+│ ├── avatar.json
+
+│ ├── games.json
+
+│ ├── leaderboard.json
+
+│ ├──users.json
+
+│ └── profiles.json
+
 ├── public/
 
-│   ├── index.html
+│ ├── /Images
 
-│   ├── style.css
+│  │ ├── img1.jpeg
 
-│   └── script.js
+│  │ ├── img2.jpeg
 
-├── questions.json
+│  │ ├── img3.jpeg
 
-├── server.js
+│  │ └── img4.jpeg
+
+│ ├── /JavaScript
+
+│  │ ├── script.js
+
+│  │ ├── navbar.js 
+
+│  │ ├── profileSettings.js  
+
+│  │ └── darkmode.js  
+
+│ ├── /Stylesheets
+
+│  │ ├── darkmode.css
+
+│  │ ├──  header.css
+
+│  │ ├── homepage.css
+
+│  │ ├── settings.css
+
+│  │ └── style.css
+
+├── routes/
+
+│ ├── auth.js
+
+│ ├── index.js
+
+│ ├── leaderboard.js
+
+│ ├── profile.js
+
+│ ├── quiz.js
+
+│ └── settings.js
+
+├── views/
+
+│ ├── /auth
+
+│  │ ├── header.ejs
+
+│  │ ├── index.ejs
+
+│  │ ├── signin.ejs
+
+│  │ └── signup.ejs
+
+│ ├── /main
+
+│  │ ├── leaderboard.ejs
+
+│  │ ├── mainPage.ejs
+
+│  │ ├── profile.ejs
+
+│  │ ├──quiz.ejs
+
+│  │ ├── quizheader.ejs
+
+│  │ └──settings.ejs
+
+│ └──error.ejs
+
+├── app.js
+
+├──package.json
 
 └── README.md
-
 
 
 📦 Setup Instructions
@@ -67,7 +167,7 @@ quiz-app/
 
 3. Install dependencies:
 
-   npm install express cors
+   npm install
 
 4. Start the server:\
 
