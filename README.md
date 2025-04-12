@@ -75,8 +75,10 @@ quiz-app/
 5. Access the app:
 
    Visit http://localhost:3000 in your browser
+   
+6. To access the App online, please use this link
 
-
+   Visit [quiz-app-rrfw.onrender.com]
 
 🧑 Author
 1. Mohd Afwan Shaikh [https://www.linkedin.com/in/mohdafwan/] [https://afwans.github.io/]
