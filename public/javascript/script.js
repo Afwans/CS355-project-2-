@@ -127,6 +127,8 @@ function startTimer() {
                 timeoutSound.currentTime = 0; // Rewind to start
                 timeoutSound.play();
             }
+            showTimeoutPopup()
+            showCorrectAnswer();
         }
     }, 1000);
     timer2 = setInterval(() => {
@@ -180,6 +182,8 @@ function showScore() {
     nextButton.innerText = "Review Answers";
     nextButton.style.display = "block";
     sendScore(score, timeTaken);
+    showFinalMessage(score, questions.length);
+
 }
 
 function handleNextButton() {
