@@ -28,6 +28,7 @@ This is a full-featured Quiz Web App built using HTML, CSS, and JavaScript, with
 
 
 
+
 🧠 Technologies Used
 Frontend: HTML, CSS, JavaScript
 
@@ -82,13 +83,18 @@ quiz-app/
 
 🧑 Author
 1. Mohd Afwan Shaikh [https://www.linkedin.com/in/mohdafwan/] [https://afwans.github.io/]
-2. 
+2. sara
+3. arjun
+4. sadia
+
+
+Contribution to the project 
 
 
 
 
 📄 License
-This project is strictly limited to use by Mohd Afwan Shaikh's team only. Unauthorized usage, distribution, or modification by others is strictly prohibited and may lead to legal action.
+This project is strictly limited to use by Mohd Afwan Shaikh, ......., and ...... Unauthorized usage, distribution, or modification by others is strictly prohibited and may lead to legal action.
 If found in use outside of the authorized team, it can result in a lawsuit.
 
 
