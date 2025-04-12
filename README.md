@@ -205,8 +205,8 @@ Contribution to the project
 | Name  | Contribution |
 | ----- | ----- |
 | Mohd Afwan Shaikh  | dgrdegergeger |
-| Arjun | gregerergergre |
-| Sara | gregerergergre |
+| Arjun Chhabra | gregerergergre |
+| Nageen Saira | gregerergergre |
 | Sadia Sharmin | htrddtrhgrt |
 
 
