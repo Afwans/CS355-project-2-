@@ -45,7 +45,9 @@ This is a full-featured Quiz Web App built using HTML, CSS, and JavaScript, with
 
 ✅ Final message based on scores
 
+✅ Practice mode 
 
+✅ Greeting Message
 
 
 🧠 Technologies Used
@@ -210,13 +212,19 @@ quiz-app/
 
 Contribution to the project 
 
-| Name  | Contribution |
-| ----- | ----- |
-| Mohd Afwan Shaikh  | dgrdegergeger |
-| Arjun Chhabra | gregerergergre |
-| Nageen Saira | gregerergergre |
-| Sadia Sharmin | htrddtrhgrt |
+| Name  | Contribution | Worked on 
+| ----- | ----- | ----- |
+| Mohd Afwan Shaikh  | Backend + Core Features | Project Architecture & Planning, Backend API Setup (Node.js + Express), User storage and maintenance (via backend/database), Account Handling and Security, Real-time leaderboard showcasing top-performing users, Game history tracking and display, Final Message based on Scores, Greeting Message, Deployment & Error Handling, Assistance in all modules for debugging & integration |
+| Arjun Chhabra | Frontend Developer - Core UI | Start screen with question count selector, Multiple choice questions UI, Shuffled answer order, Timer per question (10 seconds), Progress tracker (text + bar), End-of-quiz score display, Review mode (show your answers vs. correct), Replay functionality, Practice mode |
+| Nageen Saira | Profile & User Management |Customizable user profiles, Editable bio, email, username, and password, Seamless profile update experience, Greeting Message (on profile / main screen), Profile Page Styling, Settings Page UI and logic |
+| Sadia Sharmin | Advanced Features & UI Enhancements | Dark mode toggle, Sound mode toggle, Sound effects when a question is answered, Frontend Sound Integration Logic, Navbar/Settings enhancements, UI Responsiveness across all pages, CSS Styling for the entire project (consistency & theme)|
 
+Notes:
+* All teammates contributed to testing, feedback, and final tweaks.
+
+* Regular team discussions were held for feature planning and integration.
+
+* Teamwork and communication were essential for project success.
 
 
 
