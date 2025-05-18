@@ -5,7 +5,12 @@ Github repo Link: https://github.com/Afwans/CS355-project-2-
 
 Website link: https://quiz-app-rrfw.onrender.com
 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
 🚀 Features
+
 
 🎮 Gameplay & Quiz Mechanics
 
@@ -30,16 +35,27 @@ Website link: https://quiz-app-rrfw.onrender.com
 ✅ Replay functionality (restart quiz easily)
 
 
+
 🧑‍💻 User System & Personalization
+
 ✅ Full user authentication with signup, login, logout
+
 ✅ Account handling with session-based security
+
 ✅ User storage and maintenance via backend/database
+
 ✅ Customizable user profiles with profile picture
+
 ✅ Editable bio, username, email, and password
+
 ✅ Greeting message upon login
+
 ✅ Avatar selector with image preview and update
+
 ✅ Seamless profile update experience
+
 ✅ Profile game history tracking and display
+
 
 
 📊 Leaderboard & Scoring
@@ -49,6 +65,7 @@ Website link: https://quiz-app-rrfw.onrender.com
 ✅ Game score + time-per-question tracking
 
 ✅ Daily scores stored in MongoDB (if Daily Quiz added)
+
 
 
 🌙 UI Enhancements
@@ -66,6 +83,7 @@ Website link: https://quiz-app-rrfw.onrender.com
 ✅ Timer visually styled and placed under progress bar
 
 
+
 🎯 Advanced Features
 
 ✅ Daily Quiz Challenge (in progress / planned)
@@ -79,7 +97,11 @@ Website link: https://quiz-app-rrfw.onrender.com
 ✅ Environment-based secret handling via .env
 
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
 🧠 Technologies Used
+
 
 🖥️ Frontend
 
@@ -91,6 +113,7 @@ JavaScript – for quiz logic, user interaction, sound effects, and timers
 
 EJS (Embedded JavaScript) – dynamic templates rendered on the server
 
+
 🧰 Backend
 
 Node.js – runtime for executing server-side logic
@@ -98,6 +121,7 @@ Node.js – runtime for executing server-side logic
 Express.js – lightweight web framework for routing and middleware
 
 Express-session – handles user login sessions securely
+
 
 🗃️ Data & Persistence
 
@@ -109,6 +133,7 @@ Open Trivia DB (optional upgrade) – API for dynamic quiz content
 
 dotenv – loads environment variables from .env for security
 
+------------------------------------------------------------------------------------------------------------------------------------------
 
  
 Project Structure
@@ -257,6 +282,8 @@ quiz-app/
 └── README.md               
 
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 📦 Setup Instructions
@@ -272,7 +299,17 @@ quiz-app/
 
    npm install
 
-4. Start the server:
+
+4. Create .env file:
+
+Then add the following inside:
+
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/quiz-app
+
+PORT=3000
+
+
+5. Start the server:
 
    npm start / node app.js
 
