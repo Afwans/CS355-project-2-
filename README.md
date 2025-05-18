@@ -7,169 +7,256 @@ Website link: https://quiz-app-rrfw.onrender.com
 
 🚀 Features
 
+🎮 Gameplay & Quiz Mechanics
+
 ✅ Start screen with question count selector
 
 ✅ Fetches randomized questions from the server
 
-✅ Multiple choice questions
+✅ Multiple choice questions with randomized answer order
 
-✅ Shuffled answer order
+✅ Practice Mode and Timed Mode support
 
-✅ Timer per question (10 seconds)
+✅ Timer per question (10 seconds) with timeout popup
 
-✅ Progress tracker (text + bar)
+✅ Progress tracker (text + animated progress bar)
 
-✅ Dark mode toggle 
+✅ Review mode (shows your answers vs. correct ones)
 
-✅ End-of-quiz score display
+✅ End-of-quiz score display with feedback message
 
-✅ Review mode (shows your answers vs. correct)
+✅ Final animated message based on score
 
-✅ Replay functionality
+✅ Replay functionality (restart quiz easily)
 
-✅ user storage and maintenance (via backend/database)
 
-✅ Customizable user profiles
-
-✅ Editable bio, email, username, and password
-
-✅ Account Handling and Security
-
-✅ Game history tracking and display
-
+🧑‍💻 User System & Personalization
+✅ Full user authentication with signup, login, logout
+✅ Account handling with session-based security
+✅ User storage and maintenance via backend/database
+✅ Customizable user profiles with profile picture
+✅ Editable bio, username, email, and password
+✅ Greeting message upon login
+✅ Avatar selector with image preview and update
 ✅ Seamless profile update experience
+✅ Profile game history tracking and display
+
+
+📊 Leaderboard & Scoring
 
 ✅ Real-time leaderboard showcasing top-performing users
 
+✅ Game score + time-per-question tracking
+
+✅ Daily scores stored in MongoDB (if Daily Quiz added)
+
+
+🌙 UI Enhancements
+
+✅ Dark mode toggle
+
 ✅ Sound mode toggle
 
-✅ Sound effects when a question is answered
+✅ Sound effects for correct, wrong, and timeout
 
-✅ Final message based on scores
+✅ Emoji rain animations for right/wrong answers
 
-✅ Practice mode 
+✅ Mobile-friendly and responsive layout
 
-✅ Greeting Message
+✅ Timer visually styled and placed under progress bar
+
+
+🎯 Advanced Features
+
+✅ Daily Quiz Challenge (in progress / planned)
+
+✅ Practice vs Timed mode distinction
+
+✅ Final popup and timeout popup messages
+
+✅ Layout built with modular EJS partials
+
+✅ Environment-based secret handling via .env
 
 
 🧠 Technologies Used
-Frontend: HTML, CSS, JavaScript
 
-Backend: Node.js with Express
+🖥️ Frontend
 
-Data: Static JSON file containing question objects
+HTML – for structure and layout
+
+CSS – custom styles including dark mode and animations
+
+JavaScript – for quiz logic, user interaction, sound effects, and timers
+
+EJS (Embedded JavaScript) – dynamic templates rendered on the server
+
+🧰 Backend
+
+Node.js – runtime for executing server-side logic
+
+Express.js – lightweight web framework for routing and middleware
+
+Express-session – handles user login sessions securely
+
+🗃️ Data & Persistence
+
+MongoDB with Mongoose – stores users, games, avatars, scores, and profiles
+
+Static JSON file (originally) – for basic question storage (if used in early version)
+
+Open Trivia DB (optional upgrade) – API for dynamic quiz content
+
+dotenv – loads environment variables from .env for security
 
 
- Project Structure
+ 
+Project Structure
+
 quiz-app/
 
-├── bin
+│
 
-│ └── www
+├── bin/
 
-├── databases/
+│   └── www                   
 
-│ ├── questions.json
+│
 
-│ ├── avatar.json
+├── controllers/              
 
-│ ├── games.json
+│   ├── authController.js
 
-│ ├── leaderboard.json
+│   ├── leaderboardController.js
 
-│ ├──users.json
+│   ├── profileController.js
 
-│ └── profiles.json
+│   ├── quizController.js
 
-├── public/
+│   └── settingsController.js
 
-│ ├── /Images
+│
 
-│  │ ├── img1.jpeg
+├── routes/                  
 
-│  │ ├── img2.jpeg
+│   ├── auth.js
 
-│  │ ├── img3.jpeg
+│   ├── index.js
 
-│  │ └── img4.jpeg
+│   ├── leaderboard.js
 
-│ ├── /JavaScript
+│   ├── profile.js
 
-│  │ ├── script.js
+│   ├── quiz.js
 
-│  │ ├── navbar.js 
+│   └── settings.js
 
-│  │ ├── profileSettings.js  
+│
 
-│  │ └── darkmode.js  
+├── models/                  
 
-│ ├── /sound
+│   ├── Avatar.js
 
-│  │ ├── happy.mp3
+│   ├── Game.js
 
-│  │ ├── ohno.mp3 
+│   └── User.js
 
-│  │ ├── timeout.mp3  
+│
 
-│ ├── /Stylesheets
+├── views/                    
 
-│  │ ├── darkmode.css
+│   ├── auth/                
 
-│  │ ├──  header.css
+│   │   ├── signin.ejs
 
-│  │ ├── homepage.css
+│   │   └── signup.ejs
 
-│  │ ├── settings.css
+│   │
 
-│  │ └── style.css
+│   ├── main/                 
 
-├── routes/
+│   │   ├── index.ejs
 
-│ ├── auth.js
+│   │   ├── leaderboard.ejs
 
-│ ├── index.js
+│   │   ├── profile.ejs
 
-│ ├── leaderboard.js
+│   │   ├── quiz.ejs
 
-│ ├── profile.js
+│   │   ├── results.ejs
 
-│ ├── quiz.js
+│   │   └── settings.ejs
 
-│ └── settings.js
+│   │
 
-├── views/
+│   ├── partials/             
 
-│ ├── /auth
+│   │   ├── header.ejs
 
-│  │ ├── header.ejs
+│   │   └── popup.ejs
 
-│  │ ├── index.ejs
+│   │
 
-│  │ ├── signin.ejs
+│   └── error.ejs            
 
-│  │ └── signup.ejs
+│
 
-│ ├── /main
+├── public/                 
+│   ├── JavaScript/          
 
-│  │ ├── leaderboard.ejs
+│   │   ├── darkmode.js
 
-│  │ ├── mainPage.ejs
+│   │   ├── navbar.js
 
-│  │ ├── profile.ejs
+│   │   ├── profileSettings.js
 
-│  │ ├──quiz.ejs
+│   │   └── script.js
 
-│  │ ├── quizheader.ejs
+│   │
 
-│  │ └──settings.ejs
+│   ├── Stylesheets/        
 
-│ └──error.ejs
+│   │   ├── auth.css
 
-├── app.js
+│   │   ├── popup.css
 
-├──package.json
+│   │   ├── quiz.css
 
-└── README.md
+│   │   ├── profile.css
+
+│   │   ├── setting.css
+
+│   │   ├── bass.css
+
+│   │   └── darkmode.css
+
+│   │
+
+│   ├── Stylesheets2/        
+
+│   │   ├── homepage.css
+
+│   │   ├── style.css
+
+│   │   └── settings.css
+
+│   │
+
+│   ├── sound/             
+
+│   └── Images/             
+
+│
+
+├── .env                     
+
+├── app.js                   
+
+├── package.json             
+
+└── README.md               
+
+
 
 
 📦 Setup Instructions
