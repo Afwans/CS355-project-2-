@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+  background: #8299ED;
+
+    color: #222;
+    overflow-y: hidden;
+}
+
+.homepage{
+    padding:20%;
+    position:center;
+}
+
+.homeContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h1{
+    border-bottom: none;
+    color: #222;
+}
+
+.parent-container{
+    padding:20%;
+    position:center;
+    text-align:center;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+
+.rotating-ring {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.rotating-ring::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#fff 10%, transparent 10% 20%);
+  background-size: 20px 20px;
+  animation: spin 3s linear infinite;
+  z-index: 0; /* BEHIND the wrapper */
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 92%);
+}
+
+
+
+.welcome-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  width: 340px;
+  height:60vh;
+  margin: 0 auto;
+  box-shadow: 0 0 20px #00eaff;
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;  
+}
+
+.welcome-wrapper:hover {
+  box-shadow: 0 0 30px #00eaff, 0 0 60px #00eaff;
+  transition: all 0.3s ease;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.welcome-wrapper h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  color: #bbe5ed;
+  font-family: "Audiowide", sans-serif;
+  text-shadow: 0 0 8px #00eaff, 0 0 16px #00eaff;
+  text-align: center;
+}
+
+.welcome-wrapper .btn.big {
+  width: 220px;
+  text-align: center;
+  margin: 10px auto;
+}
+  
+  
+ 
+.welcome-wrapper .tagline {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #00d4ff;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+
+}
+  
+
+
+.btn.big {
+  background-color: #00c2cb;
+  padding: 14px 30px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 10px auto;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+}
+
+
+
+
+
+.btn.big:hover {
+  background-color: #01a6b0;
+}
+  
+
+.caption {
+  font-size: 14px;
+  color: #ccc;
+  margin: 5px 0 20px;
+}
+
+  /* ========== AUTH PAGE CENTERING ========== */
+.auth-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== GLOWING FORM BOX (Sign Up / Sign In) ========== */
+.glass-form {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  width: 400px;
+  max-width: 90%;
+  
+box-shadow: 0 0 15px #00eaff, 0 0 30px #00eaff;
+
+
+  backdrop-filter: blur(6px);
+  text-align: center;
+  color: white;
+}
+
+/* ========== FORM HEADERS ========== */
+.glass-form h2 {
+  margin-bottom: 20px;
+  color: #00eaff;
+  font-size: 24px;
+
+text-shadow: 0 0 8px #00eaff, 0 0 16px #00eaff;
+
+
+  font-family: "Audiowide", sans-serif;
+  
+
+}
+
+/* ========== FORM LABELS ========== */
+.glass-form label {
+  display: block;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #00eaff;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* ========== FORM INPUTS ========== */
+.glass-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid #00eaff;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* ========== FORM BUTTON ========== */
+.glass-form button {
+  background-color: #00eaff;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 14px 30px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px #00eaff;
+}
+
+.glass-form button:hover {
+  background-color: #1ff2ff;
+  box-shadow: 0 0 25px #00eaff, 0 0 50px #00eaff;
+}
+
+/* ========== SUBTEXT / LINK STYLE ========== */
+.subtext {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #ccc;
+}
+
+.subtext a {
+  color: #c2a8ff;
+  text-decoration: underline;
+}
+
+.subtext a:hover {
+  color: #ffffff;
+}
+
+input {
+  border: 1px solid #00eaff;
+}

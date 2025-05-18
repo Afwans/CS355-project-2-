@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/Stylesheets2/style.css">
+
+<div class="profile-div">
+    <h1>Welcome back <%= userName %>!</h1>
+    <h2>Your Recent Games:</h2>
+    <% games.forEach(g => { %>
+        <div class="games">
+            <h3>Date: <%= new Date(g.date).toLocaleString() %></h3>
+            <p>Score: <%= g.score %> | Time per Question: <%= g.TPQ %>s</p>
+        </div>
+    <% }) %>
+</div>

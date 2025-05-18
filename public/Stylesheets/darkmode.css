@@ -1,0 +1,38 @@
+body.dark {
+    background: #001e4d;
+    color: #e0e0e0; 
+}
+
+body.dark .app,
+body.dark .glass-form,
+body.dark .start-screen.box {
+    background: #1f1f1f;
+    color: #e0e0e0;
+}
+
+body.dark .btn {
+    background: #2c2c2c;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark .btn:hover {
+    background: #555;
+    color: #fff;
+}
+
+body.dark #dark-mode-toggle,
+body.dark #sound-toggle-btn {
+    background: #001e4d;
+    color: white;
+}
+
+body.dark .correct {
+    background-color: #2e7d32;
+}
+
+body.dark .incorrect {
+    background-color: #c62828;
+}
+
+

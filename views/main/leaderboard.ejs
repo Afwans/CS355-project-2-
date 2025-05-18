@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/Stylesheets2/style.css">
+<link rel="stylesheet" href="/Stylesheets2/darkmode.css">
+<link rel="stylesheet" href="/Stylesheets2/leaderboard.css">
+
+<div class="leaderboard-div">
+    <h1>Leaderboard</h1>
+    <div class="leaderBoardCategories">
+        <div id = "leaderBoardnavbar">
+            <nav id="navigation">
+                <ul>
+                    <li>
+                        <div class="leaderboardRadio">
+                            <a href="/leaderboard">All Categories</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leaderboardRadio">
+                            <a href="/leaderboard/-1">Daily Challenge</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leaderboardRadio">
+                            <a href="/leaderboard/0">Potpourri</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leaderboardRadio">
+                            <a href="/leaderboard/9">General Knowledge</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leaderboardRadio">
+                            <a href="/leaderboard/31">Anime and Manga</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leaderboardRadio">
+                            <a href="/leaderboard/19">Math</a>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <% rankings.forEach((r, i) => {
+        let user = users.find(u => u._id.toString() === r.userId.toString());
+    %>
+    <div class="ranked">
+        <h3>Rank <%= i + 1 %> – <%= user.userName %></h3>
+        <p>Score: <%= r.score %> | TPQ: <%= r.TPQ %>s</p>
+    </div>
+    <% }) %>
+</div>

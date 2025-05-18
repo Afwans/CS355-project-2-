@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="/Stylesheets2/style.css">
+
+<button class="but" id="sound-toggle-btn">🔊 Sound: ON</button>
+<!-- Start Screen -->
+<div id="start-screen" class="start-screen box">
+    <h2>Welcome <%= userName %> 🎉!</h2>
+    <div id="quizOptions">
+        <div id="dailyQuizStart" class="quizChoice"> Daily Challenge</div>
+        <div id="makeQuiz" class="quizChoice"> Make Quiz</div>
+    </div>  
+
+
+    <div id="quizContainer" class="hiddenItem">
+        <div class="quizSettings">
+            <label for="question-count">How many questions?</label>
+            <select id="question-count">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+        </div>
+            <div class="quizSettings">
+            <label for="question-category">Which Category?</label>
+            <select id="question-category">
+            <option value="0" selected>Potpourri</option>
+            <option value="9" >General Knowledge</option>
+            <option value="31" >Anime and Manga</option>
+            <option value="19" >Math</option>
+            </select>
+        </div>
+        <div class="quizSettings">
+            <label for="question-mode">Which Mode?</label>
+            <select id="question-mode">
+            <option value="Practice"> Practice</option>
+            <option value="Timed" selected>Timed</option>
+            </select>
+        </div>
+
+        <div id="timer-options" class="quizSettings" style="display: block;"> <!-- or display: none if you want it hidden initially -->
+            <label for="time-limit">Set Time Limit (seconds):</label>
+            <select id="time-limit">
+                <option value="10" selected>10s</option>
+                <option value="20"> 20s</option>
+                <option value="30"> 30s</option>
+                <option value="60"> 60s</option>
+            </select>
+        </div>
+        <button id="start-btn">Start Quiz</button>
+    </div>    
+</div>
+
+<!-- Quiz App -->
+ <div class="app" style="display: none;">
+  <h1 id="mode-Display">Quiz Time</h1>
+  <div id="progress" class="progress">Question 1 of 10</div>
+  <div class="progress-bar">
+    <div id="progress-fill" class="progress-fill"></div>
+  </div>
+  <div id="timer" class="timer">Time: 10s</div>
+  <div class="quiz">
+    <h2 id="question">Question goes here</h2>
+    <div id="answer-buttons"></div>
+    <button id="next-btn" style="display: none;">Next</button>
+  </div>
+</div>
+
+<!-- Review Screen -->
+<div id="review-screen" class="app" style="display: none;">
+    <h1>Review Answers</h1>
+    <div id="review-container"></div>
+    <button id="back-btn">Back to Start</button>
+</div>
+
+<!-- Emoji Rain -->
+<div id="emoji-rain-container"></div>
+<div id="happy-emoji-shower"></div>
+
+<!-- Popups -->
+<%- include('../partials/popups') %>
+

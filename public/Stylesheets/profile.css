@@ -1,0 +1,13 @@
+.profile-div,
+.leaderboard-div {
+    padding: 2% 20%;
+    color: white;
+}
+
+.games,
+.ranked {
+    padding: 10px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}

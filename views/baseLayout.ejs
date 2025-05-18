@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+
+    <!-- Base CSS -->
+    <!-- <link rel="stylesheet" href="/Stylesheets2/darkmode.css">
+    <link rel="stylesheet" href="/Stylesheets2/homepage.css">
+    <link rel="stylesheet" href="/Stylesheets2/header.css">
+    <link rel="stylesheet" href="/Stylesheets2/style.css">
+    <link rel="stylesheet" href="/Stylesheets2/index.css"> -->
+    <!-- <link rel="stylesheet" href="/Stylesheets2/settings.css"> -->
+
+    <!-- Page-specific CSS -->
+    <% if (typeof extraCSS !== 'undefined') { %>
+        <link rel="stylesheet" href="<%= extraCSS %>">
+    <% } %>
+</head>
+<body>
+
+<%- include('./partials/header') %>
+
+<!-- Page Content -->
+<%- body %>
+
+<!-- Page-specific JavaScript -->
+<% if (typeof extraScript !== 'undefined') { %>
+    <script src="<%= extraScript %>"></script>
+<% } %>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+.auth-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    background-color: #6a9cf3;
+}
+
+.glass-form h2 {
+    margin-bottom: 20px;
+    color: #001e4d;
+}
+
+.glass-form input,
+.glass-form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+.glass-form button {
+    background-color: #00c2cb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.glass-form button:hover {
+    background-color: #008b93;
+}
+
+.subtext {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #001e4d;
+}

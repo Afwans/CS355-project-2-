@@ -1,0 +1,36 @@
+.settingContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+textarea {
+    resize: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.profileChange img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.picturesDropDown {
+    margin-top: 10px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.choice {
+    max-width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.infoPiece {
+    margin-bottom: 20px;
+}

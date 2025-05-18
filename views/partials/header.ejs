@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/Stylesheets2/header.css">
+<link rel="stylesheet" href="/Stylesheets2/darkmode.css">
+<div class="navbar">
+    <button id="dark-mode-toggle" class="but">🌙 Dark Mode</button>
+    <div class="navbarP2">
+        <a href="/quiz"><button class="but">Quiz</button></a>
+        <% if (typeof path !== 'undefined') { %>
+            <div class="dropdown-Container">
+                <div class="profile-button">
+                    <img id="headerPic" class="profilePic" src="<%= path %>">
+                </div>
+                <div class="dropdownMenu">
+                    <div class="settings">
+                        <img class="pPic" src="<%= path %>">
+                        <h2 id="greet">Hello!</h2>
+                    </div>
+                    <div class="options">
+                        <div class="dropdown-item"><a href="/settings"><h4>Profile</h4></a></div>
+                        <div class="dropdown-item"><a href="/profile"><h4>Recent Games</h4></a></div>
+                        <div class="dropdown-item"><a href="/leaderboard"><h4>Leaderboard</h4></a></div>
+                        <div class="dropdown-item"><a href="/auth/logout"><h4>Logout</h4></a></div>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>
+<script src="/Javascript/darkmode.js"></script>
+<script src="/JavaScript/navbar.js"></script>

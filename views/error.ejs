@@ -1,0 +1,10 @@
+<% extraCSS = '/public/Stylesheets/auth.css' %>
+
+<div style="text-align: center; padding: 100px;">
+    <h1>🚨 <%= message || "Something went wrong." %></h1>
+    <h2>Status Code: <%= error.status || 500 %></h2>
+    <% if (error.stack) { %>
+        <pre style="color: red; margin-top: 20px;"><%= error.stack %></pre>
+    <% } %>
+    <a href="/" class="btn big" style="margin-top: 30px;">Go Back Home</a>
+</div>
