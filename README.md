@@ -1,4 +1,4 @@
-# CS355 Project 2
+# CS355 Project 3
 This is a full-featured Quiz Web App built using HTML, CSS, and JavaScript, with a Node.js + Express backend that serves questions from a JSON file. The app supports a clean UI, interactive gameplay, and advanced features like dark mode, progress tracking, review mode, and more.
 
 Github repo Link: https://github.com/Afwans/CS355-project-2-
