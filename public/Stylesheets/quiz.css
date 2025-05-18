@@ -53,13 +53,14 @@ h1 {
 }
 
 .timer {
-    font-size: 18px;
-    color: #9D0505;
-    position: absolute;
-    top: 110px;
-    right: 50px;
-    font-weight: bold;
-}
+     font-size: 20px;
+     color: #9D0505;
+     font-weight: bold;
+     margin-top: -5px;
+     margin-bottom: 10px;
+     text-align: center;
+     position: relative;
+ }
 
  .start-screen.box {
     background: #fff;
