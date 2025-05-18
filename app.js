@@ -58,4 +58,18 @@ app.use((req, res, next) => {
     res.status(404).render('error', { message: 'Page Not Found', error: {} });
 });
 
+// port
+if (require.main === module) {
+  const http = require('http');
+  const port = process.env.PORT || 3000;
+  app.set('port', port);
+
+  const server = http.createServer(app);
+
+  server.listen(port, () => {
+    console.log(`✅ App listening on port ${port}`);
+  });
+}
+
+
 module.exports = app;
